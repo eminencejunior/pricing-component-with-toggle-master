@@ -1,0 +1,17 @@
+@import './partials/reset';
+@import './partials/mixin';
+
+body{
+    @include flex(column, center, center);
+    height: 100vh;
+    width: 100%;
+    header{
+        @include flex(column, center, center);
+        span{
+            @include flex(row, center, center);
+        }
+    }
+    main{
+        @include flex(row, center, center);
+    }
+}
